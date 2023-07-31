@@ -6,9 +6,10 @@ import { motion } from 'framer-motion';
 const Home = () => {
   return (
     <motion.div className="home container"
-      initial={{opacity: 0}}
-      animate={{ opacity: 1}}
-    >
+      initial={{opacity: 0}}  // from initial 
+      animate={{ opacity: 1}}  // to final animation
+      transition={{delay: 1 , duration: 1}}
+    >  
       <h2>
         Welcome to Pizza Joint
       </h2>

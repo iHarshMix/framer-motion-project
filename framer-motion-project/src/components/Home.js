@@ -6,19 +6,15 @@ import { motion } from 'framer-motion';
 const Home = () => {
   return (
     <motion.div className="home container"
-      animate={{marginTop: '200px', opacity: 0.6, rotateZ: 360}}
+      initial={{opacity: 0}}
+      animate={{ opacity: 1}}
     >
-      {/* <motion.h2
-        animate={{fontSize:'50px' , color: '#ff2994', x: 100, y:-100}}
-      >
-        Welcome to Pizza Joint
-      </motion.h2> */}
       <h2>
         Welcome to Pizza Joint
       </h2>
       <Link to="/base">
         <motion.button 
-          animate={{scale: 1.5}}
+          animate={{}}
         >
           Create Your Pizza
         </motion.button>
